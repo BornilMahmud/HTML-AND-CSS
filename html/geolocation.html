@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <script>
+    navigator.geolocation.getCurrentPosition(function(possition){
+
+      let altitude = possition.coords.altitude;
+      let latitude = possition.coords.latitude;
+      let longitude = possition.coords.longitude;
+      let speed = possition.coords.speed;
+
+      document.write("altitude" + altitude + "<br>");
+      document.write("longitude" + longitude + "<br>");
+      document.write("latitude" + latitude + "<br>");
+      document.write("speed" + speed + "<br>");
+
+
+      
+    })
+                                             
+  </script>
+</body>
+</html>
