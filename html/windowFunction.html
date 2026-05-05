@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My js practice </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button onclick ="Objalart()">try alert </button> 
+  <button onclick ="ObjConfirm()">try confirmation </button>
+  <button onclick ="ObjPrompt()">try prompt </button>
+   <button onclick ="Objopen()">try open </button>
+   <button onclick ="ObjClose()">try close </button>
+  <script>
+    function Objalart(){
+      alert("save successfull ! ")
+    }
+    function ObjConfirm(){
+      let result = confirm("Do you want to leave this page ? ");
+     // document.write(result);
+      if (result == true)
+      document.write("Then you must close the tab !");
+      else 
+      document.write("kee finding new bugs ! ")
+      
+    }
+    function ObjPrompt(){
+      let result = prompt("Enter your name : ");
+      document.write("your name is " + result);
+      
+    }
+    function Objopen(){
+      open();
+      
+    }
+    function ObjClose(){
+      close();
+    }
+  </script>
+</body>
+</html>
